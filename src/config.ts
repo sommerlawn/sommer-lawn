@@ -32,8 +32,8 @@ export const SiteMetadata = {
 export { default as Logo } from './assets/svg/astro/logomark-light.svg'
 export { default as LogoImage } from './assets/svg/astro/logomark-dark.svg'
 export { default as FeaturedSVG } from './assets/Lawn.png'
-export { default as DefaultSVG } from './assets/svg/undraw/undraw_my_feed.svg'
-export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
+export { default as DefaultSVG } from './assets/SommerLogo_Black.png'
+export { default as DefaultImage } from './assets/SommerLogo_Black.png'
 
 export const NavigationLinks = [
   { name: 'Home', href: '' },
