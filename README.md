@@ -1,30 +1,39 @@
 # Sommer Lawn
-This is the repo for the https://sommerlawn.com website
+
+This is the repo for the <https://sommerlawn.com> website
 This is an [Astro](https://astro.build) website based on the [Hello Astro](https://github.com/hellotham/hello-astro) starter theme which uses Typescript, TailwindCSS, Markdown and MDX. It follows the [JAMstack architecture](https://jamstack.org) by automatically building a static version from the Git repository and deploying to [Netlify](https://app.netlify.com).
 
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1yaqf.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+
 ## Development
+
 ### Get Started
+
 - `git clone` this repo and cd to the repo directory
 - `npm install -g pnpm` Install performant NPM which is required for builds and deployment
 - `pnpm install` Install dependencies
 - `pnpm dev` Run local server for local development
 
 ### Adding New Features
+
 - When adding new features, create a feature branch. E.g: `git checkout -B new-contact-page` and develop from that branch.
 - When local development works, deploy those updates by pushing to the remote feature branch which will build a Netlify Deploy Preview. E.g, with the feature branch checked out: `git push` and then you can check how the Deploy Preview looks.
-- If the Deploy Preview looks good, then you can open a PR and merge to the `main` git branch, which will then automatically deploy to production and make your new changes live on https://sommerlawn.com.
+- If the Deploy Preview looks good, then you can open a PR and merge to the `main` git branch, which will then automatically deploy to production and make your new changes live on <https://sommerlawn.com>.
 
 ### Notes on Deploying to the Netlify Environment
-- All commits to the main branch are automatically deployed to production on Netlify at https://sommerlawn.com.
+
+- All commits to the main branch are automatically deployed to production on Netlify at <https://sommerlawn.com>.
 - Builds for deployments to Netlify should be handled in `netlify.toml` and `package.json`, not in the Netlify GUI.
 - Don't upgrade packages unless required.
 - Packages should be handled via `pnpm-lock.yaml` and commited since that is what the production build will use via the `pnpm i --frozen-lockfile && pnpm build` command.
 - Develop with the same version of Node that Netlify will use and specify that in `package.json`.
 
 ## 🧞 Commands
+
 All commands are run from the root of the project, from a terminal:
 
 ### PNPM & Astro
+
 | Command             | Action                                             |
 | :------------------ | :------------------------------------------------- |
 | `pnpm install`      | Installs dependencies                              |
@@ -37,10 +46,12 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro --help` | Get help using the Astro CLI                       |
 
 ### Netlify CLI
+
 Optionally, you can install the Netlify CLI to manually push deploy previews and use other Netlify features
 `brew install netlify-cli`
 
 ## 🚀 Project Structure
+
 ```text
 /
 ├── public/
@@ -81,7 +92,9 @@ Blog and documentation content are created as collections of Markdown or MDX fil
 Any static assets, eg. images, can be placed in the `public/` directory.
 
 ## Integrations & Features
+
 Uses the following integrations:
+
 - @astrojs/mdx
 - @astrojs/markdoc
 - @astrojs/sitemap
@@ -114,6 +127,7 @@ In addition, SVG and PNG illustrations sourced from [Undraw](https://undraw.co)
 - Documentation pages (modelled after astro docs starter but using Tailwind)
 
 ## External Packages
+
 - [Astro](https://astro.build/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com) and [TailwindUI](https://tailwindui.com)
